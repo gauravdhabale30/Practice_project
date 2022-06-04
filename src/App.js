@@ -3,10 +3,12 @@ import "./App.css";
 import Greet from "./components/Greet";
 import Welcome from "./components/Welcome";
 import Hello from "./components/Hello";
+import Message from "./components/Message";
 function App() {
   return (
     <div className="App">
-      <Greet name="Gaurav" surname="Dhabale">
+      <Message />
+      {/* <Greet name="Gaurav" surname="Dhabale">
         <p>This is children</p>
       </Greet>
       <Greet name="Loskesh" surname="Jawale">
@@ -15,7 +17,7 @@ function App() {
       <Greet name="Kartik" surname="Kumbhakarna">
         <h6>child element</h6>
       </Greet>
-      <Welcome name="Gaurav" surname="Dhabale"></Welcome>
+      <Welcome name="Gaurav" surname="Dhabale"></Welcome> */}
       {/* <Hello /> */}
     </div>
   );
