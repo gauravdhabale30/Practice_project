@@ -31,7 +31,7 @@ class Counter extends Component {
         count: prevState.count + 1,
       }),
       () => {
-        console.log("callback value" + this.state.count);
+        console.log(`callback value ${this.state.count}`);
       }
     );
   }

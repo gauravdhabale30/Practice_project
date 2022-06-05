@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-
+// rce to create class
 class Message extends Component {
+  // rconst to create constructor
   constructor() {
     super();
     this.state = {
