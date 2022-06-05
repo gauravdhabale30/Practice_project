@@ -39,6 +39,14 @@ class Counter extends Component {
     return (
       <div>
         <div>counter {this.state.count}</div>
+        {/* important note when we want to pass data to funtion at that time inline funtion
+       <button onClick={() => this.incrementFive()}> + </button> this should use
+
+       when we dont want to pass data to funtion  at that time normal name of funtion
+      <button onClick={clickHandler}> click</button> should use
+
+      if we write   <button onClick={clickHandler()}> click</button>
+      funtion will get called as soon as page is renderd before we click on butten */}
         <button onClick={() => this.incrementFive()}> + </button>
       </div>
     );

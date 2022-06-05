@@ -36,6 +36,8 @@ import React from "react";
 
 const Greet = (props) => {
   const { name, surname } = props;
+  //also we canuse state
+  // const { lname } = this.state;
   return (
     <div>
       <h1>
