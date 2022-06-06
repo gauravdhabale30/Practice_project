@@ -33,7 +33,10 @@ function NameList() {
     },
   ];
   // Person componet is added used in application
-  const personList = person.map((person) => <Person persons={person} />);
+  const personList = person.map((person) => (
+    // key is used as unique parameter not for us it is for react
+    <Person key={person.name} persons={person} />
+  ));
   return (
     <div>
       <div>{personList}</div>
