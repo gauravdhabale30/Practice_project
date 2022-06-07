@@ -14,10 +14,12 @@ import NameList from "./components/NameList";
 import StyleSheet from "./components/StyleSheet";
 import Form from "./components/Form";
 import LifeCycleA from "./components/LifeCycleA";
+import FregmentDemo from "./components/FregmentDemo";
 function App() {
   return (
     <div className="App">
-      <LifeCycleA />
+      <FregmentDemo />
+      {/* <LifeCycleA /> */}
       {/* <Form /> */}
       {/* <StyleSheet colors={true} /> */}
       {/* <NameList /> */}
