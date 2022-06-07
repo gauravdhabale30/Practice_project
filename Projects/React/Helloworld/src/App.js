@@ -11,10 +11,16 @@ import EventBinding from "./components/EventBinding";
 import ParentComponent from "./components/ParentComponent";
 import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
+import StyleSheet from "./components/StyleSheet";
+import Form from "./components/Form";
+import LifeCycleA from "./components/LifeCycleA";
 function App() {
   return (
     <div className="App">
-      <NameList />
+      <LifeCycleA />
+      {/* <Form /> */}
+      {/* <StyleSheet colors={true} /> */}
+      {/* <NameList /> */}
       {/* <UserGreeting /> */}
       {/* <ParentComponent /> */}
       {/* <EventBinding /> */}
