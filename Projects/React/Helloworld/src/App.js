@@ -15,10 +15,12 @@ import StyleSheet from "./components/StyleSheet";
 import Form from "./components/Form";
 import LifeCycleA from "./components/LifeCycleA";
 import FregmentDemo from "./components/FregmentDemo";
+import RefDemo from "./components/RefDemo";
 function App() {
   return (
     <div className="App">
-      <FregmentDemo />
+      <RefDemo />
+      {/* <FregmentDemo /> */}
       {/* <LifeCycleA /> */}
       {/* <Form /> */}
       {/* <StyleSheet colors={true} /> */}
