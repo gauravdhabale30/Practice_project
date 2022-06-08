@@ -16,10 +16,12 @@ import Form from "./components/Form";
 import LifeCycleA from "./components/LifeCycleA";
 import FregmentDemo from "./components/FregmentDemo";
 import RefDemo from "./components/RefDemo";
+import Portal from "./components/Portal";
 function App() {
   return (
     <div className="App">
-      <RefDemo />
+      <Portal />
+      {/* <RefDemo /> */}
       {/* <FregmentDemo /> */}
       {/* <LifeCycleA /> */}
       {/* <Form /> */}
