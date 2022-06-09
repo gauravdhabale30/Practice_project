@@ -20,10 +20,15 @@ import Portal from "./components/Portal";
 import RenderPropsCounter from "./components/RenderPropsCounter";
 import RenderPropsHover from "./components/RenderPropsHover";
 import RenderPropUser from "./components/RenderPropUser";
+import ComponentA from "./components/Context/ComponentA";
+import { UserProvider } from "./components/Context/UserContext";
 function App() {
   return (
     <div className="App">
-      <RenderPropUser
+      <UserProvider value="Gaurav">
+        <ComponentA />
+      </UserProvider>
+      {/* <RenderPropUser
         render={(count, incrementCount) => (
           <RenderPropsCounter count={count} incrementCount={incrementCount} />
         )}
@@ -32,7 +37,7 @@ function App() {
         render={(count, incrementCount) => (
           <RenderPropsHover count={count} incrementCount={incrementCount} />
         )}
-      />
+      /> */}
       {/* <RenderPropsCounter />
       <RenderPropsHover />
       <RenderPropUser
@@ -50,7 +55,6 @@ function App() {
       {/* <EventBinding /> */}
       {/* <FunctionClick /> */}
       {/* <ClassClick /> */}
-
       {/* <Counter /> */}
       {/* <Message /> */}
       {/* <Greet name="Gaurav" surname="Dhabale">
