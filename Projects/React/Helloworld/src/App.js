@@ -19,11 +19,25 @@ import RefDemo from "./components/RefDemo";
 import Portal from "./components/Portal";
 import RenderPropsCounter from "./components/RenderPropsCounter";
 import RenderPropsHover from "./components/RenderPropsHover";
+import RenderPropUser from "./components/RenderPropUser";
 function App() {
   return (
     <div className="App">
-      <RenderPropsCounter />
+      <RenderPropUser
+        render={(count, incrementCount) => (
+          <RenderPropsCounter count={count} incrementCount={incrementCount} />
+        )}
+      />
+      <RenderPropUser
+        render={(count, incrementCount) => (
+          <RenderPropsHover count={count} incrementCount={incrementCount} />
+        )}
+      />
+      {/* <RenderPropsCounter />
       <RenderPropsHover />
+      <RenderPropUser
+        render={(isLoggedIn) => (isLoggedIn ? "Gaurav" : "Dhabale")}
+      /> */}
       {/* <Portal /> */}
       {/* <RefDemo /> */}
       {/* <FregmentDemo /> */}
