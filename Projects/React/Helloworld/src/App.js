@@ -17,10 +17,14 @@ import LifeCycleA from "./components/LifeCycleA";
 import FregmentDemo from "./components/FregmentDemo";
 import RefDemo from "./components/RefDemo";
 import Portal from "./components/Portal";
+import RenderPropsCounter from "./components/RenderPropsCounter";
+import RenderPropsHover from "./components/RenderPropsHover";
 function App() {
   return (
     <div className="App">
-      <Portal />
+      <RenderPropsCounter />
+      <RenderPropsHover />
+      {/* <Portal /> */}
       {/* <RefDemo /> */}
       {/* <FregmentDemo /> */}
       {/* <LifeCycleA /> */}
