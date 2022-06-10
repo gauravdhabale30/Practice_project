@@ -23,10 +23,12 @@ import RenderPropUser from "./components/RenderPropUser";
 import ComponentA from "./components/Context/ComponentA";
 import { UserProvider } from "./components/Context/UserContext";
 import PostList from "./components/HTTP/PostList";
+import PostForm from "./components/HTTP/PostForm";
 function App() {
   return (
     <div className="App">
-      <PostList />
+      <PostForm />
+      {/* <PostList /> */}
       {/* <UserProvider value="Gaurav">
         <ComponentA />
       </UserProvider> */}
