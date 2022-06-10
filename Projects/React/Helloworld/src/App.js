@@ -22,12 +22,14 @@ import RenderPropsHover from "./components/RenderPropsHover";
 import RenderPropUser from "./components/RenderPropUser";
 import ComponentA from "./components/Context/ComponentA";
 import { UserProvider } from "./components/Context/UserContext";
+import PostList from "./components/HTTP/PostList";
 function App() {
   return (
     <div className="App">
-      <UserProvider value="Gaurav">
+      <PostList />
+      {/* <UserProvider value="Gaurav">
         <ComponentA />
-      </UserProvider>
+      </UserProvider> */}
       {/* <RenderPropUser
         render={(count, incrementCount) => (
           <RenderPropsCounter count={count} incrementCount={incrementCount} />
