@@ -9,6 +9,7 @@ function HookCounterTwo() {
       setCount((prevCount) => prevCount + 1);
     }
   };
+  console.log(count);
   return (
     <div>
       <div>count:{count}</div>
