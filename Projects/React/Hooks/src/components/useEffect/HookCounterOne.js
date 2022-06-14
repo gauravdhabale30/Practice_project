@@ -6,8 +6,8 @@ function HookCounterOne() {
   useEffect(() => {
     console.log("updating documents title");
     document.title = `Clicked ${count} times hook`;
-  }, [count]); //If present, effect will only activate if the values in the list change.
-  //Accepts a function that contains imperative, possibly effectful code.
+  }, [count]); // If present, effect will only activate if the values in the list change.
+  // Accepts a function that contains imperative, possibly effectful code.
 
   return (
     <div>
