@@ -12,6 +12,12 @@ function HookMouse() {
   useEffect(() => {
     console.log("use effect called");
     window.addEventListener("mousemove", logMousePosition);
+
+    return () => {
+      // return will work as unmounting method(cleanup code) and we can see result in mousecontainer on consle
+      console.log("component unmounting code");
+      window.removeEventListener("mousemove", logMousePosition);
+    };
   }, []);
   return (
     <div>
