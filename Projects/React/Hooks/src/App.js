@@ -2,6 +2,7 @@
 import "./App.css";
 import Classcounter from "./components/useEffect/Classcounter";
 import DataFetch from "./components/useEffect/DataFetch";
+import DataFetchingWithId from "./components/useEffect/DataFetchingWithId";
 import HookCounterOne from "./components/useEffect/HookCounterOne";
 import HookMouse from "./components/useEffect/HookMouse";
 import IntervalHookCounter from "./components/useEffect/IntervalHookCounter";
@@ -15,7 +16,8 @@ import HookCounterTwo from "./components/useState/HookCounterTwo";
 function App() {
   return (
     <div className="App">
-      <DataFetch />
+      <DataFetchingWithId />
+      {/* <DataFetch /> */}
       {/* <IntervalHookCounter /> */}
       {/* <MouseContainer /> */}
       {/* <HookMouse /> */}
