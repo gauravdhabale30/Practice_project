@@ -1,6 +1,7 @@
 //import logo from "./logo.svg";
 import "./App.css";
 import Classcounter from "./components/useEffect/Classcounter";
+import DataFetch from "./components/useEffect/DataFetch";
 import HookCounterOne from "./components/useEffect/HookCounterOne";
 import HookMouse from "./components/useEffect/HookMouse";
 import IntervalHookCounter from "./components/useEffect/IntervalHookCounter";
@@ -14,7 +15,8 @@ import HookCounterTwo from "./components/useState/HookCounterTwo";
 function App() {
   return (
     <div className="App">
-      <IntervalHookCounter />
+      <DataFetch />
+      {/* <IntervalHookCounter /> */}
       {/* <MouseContainer /> */}
       {/* <HookMouse /> */}
       {/* <HookCounterOne /> */}
