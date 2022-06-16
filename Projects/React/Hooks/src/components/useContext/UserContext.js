@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 const UserContext = React.createContext();
 
-const UserProvider = UserContext.Provider;
+const UserProvider = ({ children }) => {
+  return <UserContext.Provider value="Gaurav">{children}</UserContext.Provider>;
+};
+export const useGolbalContext = () => {
+  return useContext(UserContext);
+};
 
 const UserConsumer = UserContext.Consumer;
 
-export { UserProvider, UserConsumer };
+export { UserProvider, UserContext, UserConsumer };

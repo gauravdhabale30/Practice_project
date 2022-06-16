@@ -1,5 +1,8 @@
 //import logo from "./logo.svg";
 import "./App.css";
+import ComponentA from "./components/useContext/ComponentA";
+import FunCompoA from "./components/useContext/FunCompoA";
+import { UserProvider } from "./components/useContext/UserContext";
 import Classcounter from "./components/useEffect/Classcounter";
 import DataFetch from "./components/useEffect/DataFetch";
 import DataFetchingWithId from "./components/useEffect/DataFetchingWithId";
@@ -18,9 +21,12 @@ function App() {
   return (
     <div className="App">
       {/*-------------------------- useContext hooks --------------------------------- */}
-      <UserProvider value="Gaurav">
+
+      <FunCompoA />
+
+      {/* <UserProvider value="Gaurav">
         <ComponentA />
-      </UserProvider>
+      </UserProvider> */}
       {/*-------------------------- useEffect hooks --------------------------------- */}
       {/* <DataFetchOnClick /> */}
       {/* <DataFetchingWithId /> */}
