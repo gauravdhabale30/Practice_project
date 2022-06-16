@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 function DataFetchOnClick() {
   const [post, setPost] = useState({});
-  const [id, setId] = useState(1);
-  const [num, setNum] = useState(1);
+  const [id, setId] = useState(0);
+  const [num, setNum] = useState(0);
   useEffect(() => {
     axios
       .get(`https://jsonplaceholder.typicode.com/posts/${num}`)

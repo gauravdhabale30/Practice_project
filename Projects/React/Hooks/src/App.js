@@ -17,7 +17,12 @@ import HookCounterTwo from "./components/useState/HookCounterTwo";
 function App() {
   return (
     <div className="App">
-      <DataFetchOnClick />
+      {/*-------------------------- useContext hooks --------------------------------- */}
+      <UserProvider value="Gaurav">
+        <ComponentA />
+      </UserProvider>
+      {/*-------------------------- useEffect hooks --------------------------------- */}
+      {/* <DataFetchOnClick /> */}
       {/* <DataFetchingWithId /> */}
       {/* <DataFetch /> */}
       {/* <IntervalHookCounter /> */}
@@ -25,6 +30,7 @@ function App() {
       {/* <HookMouse /> */}
       {/* <HookCounterOne /> */}
       {/* <Classcounter /> */}
+      {/*-------------------------- useState hooks --------------------------------- */}
       {/* <HookCounterFour />
       <HookCounterThree /> */}
       {/* <HookCounterTwo /> */}
