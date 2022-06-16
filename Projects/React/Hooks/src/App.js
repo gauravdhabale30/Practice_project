@@ -11,6 +11,7 @@ import HookCounterOne from "./components/useEffect/HookCounterOne";
 import HookMouse from "./components/useEffect/HookMouse";
 import IntervalHookCounter from "./components/useEffect/IntervalHookCounter";
 import MouseContainer from "./components/useEffect/MouseContainer";
+import CounterOne from "./components/useReducer/CounterOne";
 import ClassCounter from "./components/useState/ClassCounter";
 import HookCounter from "./components/useState/HookCounter";
 import HookCounterFour from "./components/useState/HookCounterFour";
@@ -20,10 +21,11 @@ import HookCounterTwo from "./components/useState/HookCounterTwo";
 function App() {
   return (
     <div className="App">
+      {/*-------------------------- useReducer hooks --------------------------------- */}
+      <CounterOne />
+
       {/*-------------------------- useContext hooks --------------------------------- */}
-
-      <FunCompoA />
-
+      {/* <FunCompoA /> */}
       {/* <UserProvider value="Gaurav">
         <ComponentA />
       </UserProvider> */}
