@@ -25,6 +25,7 @@ import HookCounterThree from "./components/useState/HookCounterThree";
 import HookCounterTwo from "./components/useState/HookCounterTwo";
 import StateAndAxios from "./components/useReducer/StateAndAxios";
 import ReducerAndAxios from "./components/useReducer/ReducerAndAxios";
+import ParentComponent from "./components/useCallback/ParentComponent";
 
 const initialState = 0;
 const reducer = (state, action) => {
@@ -44,9 +45,12 @@ function App() {
   const [count, dispatch] = useReducer(reducer, initialState);
   return (
     <div className="App">
+      {/*-------------------------- useCallback hooks --------------------------------- */}
+      <ParentComponent />
+
       {/*-------------------------- useReducer hooks --------------------------------- */}
 
-      <ReducerAndAxios />
+      {/* <ReducerAndAxios /> */}
       {/* <StateAndAxios /> */}
       {/* <CountContext.Provider
         value={{ countState: count, countDispatch: dispatch }}
