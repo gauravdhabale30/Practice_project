@@ -26,6 +26,7 @@ import HookCounterTwo from "./components/useState/HookCounterTwo";
 import StateAndAxios from "./components/useReducer/StateAndAxios";
 import ReducerAndAxios from "./components/useReducer/ReducerAndAxios";
 import ParentComponent from "./components/useCallback/ParentComponent";
+import CounterMemo from "./components/useCallback/CounterMemo";
 
 const initialState = 0;
 const reducer = (state, action) => {
@@ -46,7 +47,8 @@ function App() {
   return (
     <div className="App">
       {/*-------------------------- useCallback hooks --------------------------------- */}
-      <ParentComponent />
+      <CounterMemo />
+      {/* <ParentComponent /> */}
 
       {/*-------------------------- useReducer hooks --------------------------------- */}
 
