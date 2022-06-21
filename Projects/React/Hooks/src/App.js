@@ -27,6 +27,7 @@ import StateAndAxios from "./components/useReducer/StateAndAxios";
 import ReducerAndAxios from "./components/useReducer/ReducerAndAxios";
 import ParentComponent from "./components/useCallback/ParentComponent";
 import CounterMemo from "./components/useCallback/CounterMemo";
+import InputFocusRef from "./components/useRef/InputFocusRef";
 
 const initialState = 0;
 const reducer = (state, action) => {
@@ -46,8 +47,11 @@ function App() {
   const [count, dispatch] = useReducer(reducer, initialState);
   return (
     <div className="App">
+      {/*-------------------------- useRef hooks --------------------------------- */}
+
+      <InputFocusRef />
       {/*-------------------------- useCallback hooks --------------------------------- */}
-      <CounterMemo />
+      {/* <CounterMemo /> */}
       {/* <ParentComponent /> */}
 
       {/*-------------------------- useReducer hooks --------------------------------- */}
