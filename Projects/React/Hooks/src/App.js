@@ -28,6 +28,8 @@ import ReducerAndAxios from "./components/useReducer/ReducerAndAxios";
 import ParentComponent from "./components/useCallback/ParentComponent";
 import CounterMemo from "./components/useCallback/CounterMemo";
 import InputFocusRef from "./components/useRef/InputFocusRef";
+import RefTimer from "./components/useRef/RefTimer";
+import RefClassTimer from "./components/useRef/RefClassTimer";
 
 const initialState = 0;
 const reducer = (state, action) => {
@@ -48,8 +50,9 @@ function App() {
   return (
     <div className="App">
       {/*-------------------------- useRef hooks --------------------------------- */}
-
-      <InputFocusRef />
+      <RefTimer />
+      <RefClassTimer />
+      {/* <InputFocusRef /> */}
       {/*-------------------------- useCallback hooks --------------------------------- */}
       {/* <CounterMemo /> */}
       {/* <ParentComponent /> */}
