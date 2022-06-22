@@ -30,7 +30,7 @@ console.log(myFirstJob);  */
 
 ////////////////////////////////////
 // Data Types
-let javascriptIsFun = true;
+/* let javascriptIsFun = true;
 console.log(javascriptIsFun);
 
 // console.log(typeof true);
@@ -48,4 +48,30 @@ console.log(typeof year);
 year = 1991;
 console.log(typeof year);
 
-console.log(typeof null);
+console.log(typeof null);  */
+
+////////////////////////////////////////////
+/* testing for const and let
+let a = 10;
+const b = a;
+console.log(b);
+
+a = 20;
+console.log(a);
+console.log(b);
+*/
+
+/////////////////////////////////////////
+// let, const and var
+let age = 30;
+age = 31;
+
+const birthYear = 1991;
+// birthYear = 1990;
+// const job;
+
+var job = "programmer";
+job = "teacher";
+
+lastName = "Schmedtmann";
+console.log(lastName);
