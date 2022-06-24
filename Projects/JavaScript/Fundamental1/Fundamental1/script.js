@@ -1,3 +1,48 @@
+/*
+//////////////////////////////////////////////////////////////////////////////
+//How to return unique elements from array
+let arr = ['red','red','blue','white','white','blue']
+let unique =arr.filter((item,index)=>{
+      return arr.indexOf(item) === index;
+   })
+console.log(unique)
+//how convert array into string
+ let arr2 = arr.toString()
+console.log(arr2)
+//how to convert string into array
+const arr3 = arr2.split(',')
+console.log(arr3)
+
+/////////////////////////////////////////////////////////////////////////
+const data = ["apple", "mango", "apple", "orange", "mango", "mango"];
+
+//         data.filter(datas =>{
+// if(datas != )
+
+//         })
+
+let datas = data.toString();
+
+console.log(datas);
+
+// var newData = [];
+
+// // for (let i = 0; i < data.length; i++) {
+// //   if (data[i] != newData) {
+// //     newData = data[i];
+// //   }
+// // }
+
+// data.filter((data) => {
+//   if (data != newData) newData = data;
+// });
+
+// console.log(newData);
+
+//////////////////////////////////////////////////////////////////////////
+
+*/
+
 // Linking a JavaScript File
 /* let js = "amazing";
 console.log(40 + 8 + 23 - 10);
@@ -298,6 +343,7 @@ if (height) {
 
 ////////////////////////////////////
 // Equality Operators: == vs. ===
+/*
 const age = "18";
 if (age === 18) console.log("You just became an adult :D (strict)");
 
@@ -319,3 +365,28 @@ if (favourite === 23) {
 }
 
 if (favourite !== 23) console.log("Why not 23?");
+
+*/
+////////////////////////////////////
+// Logical Operators
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision) {
+//   console.log('Sarah is able to drive!');
+// } else {
+//   console.log('Someone else should drive...');
+// }
+
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log("Sarah is able to drive!");
+} else {
+  console.log("Someone else should drive...");
+}
