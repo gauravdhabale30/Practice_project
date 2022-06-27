@@ -1,0 +1,14 @@
+.name {
+  width: 100px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  background-color: red;
+  color: #5c889e;
+}
+.demo {
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
